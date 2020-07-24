@@ -59,13 +59,13 @@ variable "proto_vpc_assign_generated_ipv6_cidr_block" {
 variable "vpc_accept_flow_logs_destination" {
   description = "Log Destination"
   type = string
-  default = "arn:aws:s3:::onekloud-AAAAA-infra/vpclogs/accept"
+  default = "arn:aws:s3:::OOOOO-AAAAA-infra/vpclogs/accept"
 }
 
 variable "vpc_reject_flow_logs_destination" {
   description = "Log Destination"
   type = string
-  default = "arn:aws:s3:::onekloud-AAAAA-infra/vpclogs/reject"
+  default = "arn:aws:s3:::OOOOO-AAAAA-infra/vpclogs/reject"
 }
 
 variable "public_subnet_us_east_1a_cidr_block" {
@@ -217,24 +217,24 @@ variable "private_subnet_us_east_1f_map_public_ip_on_launch" {
 variable "domain" {
   description = "Primary domain for this vpc"
   type = string
-  default = "thekracken.io"
+  default = "PPPPP"
 }
 
 data "aws_route53_zone" "dns_public_zone" {
-  name = "thekracken.io."
+  name = "PPPPP."
   private_zone = false
 }
 
 variable "dns_private_zone_name" {
   description = "private_zone"
   type = string
-  default = "AAAAA.thekracken.io."
+  default = "AAAAA.PPPPP."
 }
 
 variable "dns_reverse_zone_name" {
   description = "reverse zone"
   type = string
-  default = "10.10.in-addr.arpa."
+  default = "QQQQQ"
 }
 
 
@@ -292,16 +292,16 @@ variable "instance_type" {
 variable "keypairs" {
   type = map(string)
   default = {
-    "NAME" = "VALUE"
+    "RRRRR" = "RRRRR"
   }
 }
 
 variable "public_key" {
-  default = "LOCATION/keypair.pub"
+  default = "z/RRRRR.pub"
 }
 
 variable "private_key" {
-  default = "LOCATION/keypair.pem"
+  default = "z/RRRRR.pem"
 }
 
 variable "ansible_user" {
