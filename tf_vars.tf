@@ -17,7 +17,7 @@ variable "environment" {
 variable "proto_vpc_cidr_block" {
   description = "Slash 16 cidr block for this vpc"
   type = string
-  default = "BBBBB"
+  default = "BBBBB/ABABAB"
 }
 
 variable "proto_vpc_instance_tenancy" {
@@ -71,7 +71,7 @@ variable "vpc_reject_flow_logs_destination" {
 variable "public_subnet_us_east_1a_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "CCCCC"
+  default = "CCCCC/CDCDCD"
 }
 
 variable "public_subnet_us_east_1a_map_public_ip_on_launch" {
@@ -83,7 +83,7 @@ variable "public_subnet_us_east_1a_map_public_ip_on_launch" {
 variable "public_subnet_us_east_1b_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "DDDDD"
+  default = "DDDDD/DEDEDE"
 }
 
 variable "public_subnet_us_east_1b_map_public_ip_on_launch" {
@@ -95,7 +95,7 @@ variable "public_subnet_us_east_1b_map_public_ip_on_launch" {
 variable "public_subnet_us_east_1c_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "EEEEE"
+  default = "EEEEE/EFEFEF"
 }
 
 variable "public_subnet_us_east_1c_map_public_ip_on_launch" {
@@ -107,7 +107,7 @@ variable "public_subnet_us_east_1c_map_public_ip_on_launch" {
 variable "public_subnet_us_east_1d_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "FFFFF"
+  default = "FFFFF/FGFGFG"
 }
 
 variable "public_subnet_us_east_1d_map_public_ip_on_launch" {
@@ -119,7 +119,7 @@ variable "public_subnet_us_east_1d_map_public_ip_on_launch" {
 variable "public_subnet_us_east_1e_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "GGGGG"
+  default = "GGGGG/GHGHGH"
 }
 
 variable "public_subnet_us_east_1e_map_public_ip_on_launch" {
@@ -131,7 +131,7 @@ variable "public_subnet_us_east_1e_map_public_ip_on_launch" {
 variable "public_subnet_us_east_1f_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "HHHHH"
+  default = "HHHHH/HIHIHI"
 }
 
 variable "public_subnet_us_east_1f_map_public_ip_on_launch" {
@@ -143,7 +143,7 @@ variable "public_subnet_us_east_1f_map_public_ip_on_launch" {
 variable "private_subnet_us_east_1a_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "IIIII"
+  default = "IIIII/IJIJIJ"
 }
 
 variable "private_subnet_us_east_1a_map_public_ip_on_launch" {
@@ -155,7 +155,7 @@ variable "private_subnet_us_east_1a_map_public_ip_on_launch" {
 variable "private_subnet_us_east_1b_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "JJJJJ"
+  default = "JJJJJ/JKJKJK"
 }
 
 variable "private_subnet_us_east_1b_map_public_ip_on_launch" {
@@ -167,7 +167,7 @@ variable "private_subnet_us_east_1b_map_public_ip_on_launch" {
 variable "private_subnet_us_east_1c_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "KKKKK"
+  default = "KKKKK/KLKLKL"
 }
 
 variable "private_subnet_us_east_1c_map_public_ip_on_launch" {
@@ -179,7 +179,7 @@ variable "private_subnet_us_east_1c_map_public_ip_on_launch" {
 variable "private_subnet_us_east_1d_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "LLLLL"
+  default = "LLLLL/LMLMLM"
 }
 
 variable "private_subnet_us_east_1d_map_public_ip_on_launch" {
@@ -191,7 +191,7 @@ variable "private_subnet_us_east_1d_map_public_ip_on_launch" {
 variable "private_subnet_us_east_1e_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "MMMMM"
+  default = "MMMMM/MNMNMN"
 }
 
 variable "private_subnet_us_east_1e_map_public_ip_on_launch" {
@@ -203,7 +203,7 @@ variable "private_subnet_us_east_1e_map_public_ip_on_launch" {
 variable "private_subnet_us_east_1f_cidr_block" {
   description = "CIDR BLOCK"
   type = string
-  default = "NNNNN"
+  default = "NNNNN/NONONO"
 }
 
 variable "private_subnet_us_east_1f_map_public_ip_on_launch" {
