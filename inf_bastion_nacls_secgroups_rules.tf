@@ -194,3 +194,13 @@ resource "aws_security_group_rule" "bastion_security_group_rule_170" {
   to_port     = -1
   cidr_blocks = ["0.0.0.0/0"]
 }
+
+
+resource "aws_security_group_rule" "bastion_security_group_rule_180" {
+  security_group_id = module.aws-vpc-us-east-1.bastion_security_group_id
+  type        = "egress"
+  protocol    = -1
+  from_port   = 0
+  to_port     = 0
+  cidr_blocks = ["0.0.0.0/0"]
+}

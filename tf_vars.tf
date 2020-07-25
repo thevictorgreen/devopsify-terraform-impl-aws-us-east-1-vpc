@@ -231,10 +231,20 @@ variable "dns_private_zone_name" {
   default = "AAAAA.PPPPP."
 }
 
+data "aws_route53_zone" "dns_private_zone" {
+  name = "AAAAA.PPPPP."
+  private_zone = true
+}
+
 variable "dns_reverse_zone_name" {
   description = "reverse zone"
   type = string
   default = "QQQQQ"
+}
+
+data "aws_route53_zone" "dns_reverse_zone" {
+  name = "QQQQQ"
+  private_zone = true
 }
 
 
