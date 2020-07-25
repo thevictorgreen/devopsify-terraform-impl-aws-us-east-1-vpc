@@ -121,6 +121,15 @@ resource "aws_security_group_rule" "cluster_security_group_rule_100" {
   cidr_blocks = ["0.0.0.0/0"]
 }
 
+resource "aws_security_group_rule" "cluster_security_group_rule_110" {
+  security_group_id = module.aws-vpc-us-east-1.cluster_security_group_id
+  type        = "egress"
+  protocol    = -1
+  from_port   = 0
+  to_port     = 0
+  cidr_blocks = ["0.0.0.0/0"]
+}
+
 resource "aws_security_group_rule" "public_security_group_rule_100" {
   security_group_id = module.aws-vpc-us-east-1.public_security_group_id
   type        = "ingress"
@@ -157,5 +166,15 @@ resource "aws_security_group_rule" "public_security_group_rule_130" {
   protocol    = "icmp"
   from_port   = -1
   to_port     = -1
+  cidr_blocks = ["0.0.0.0/0"]
+}
+
+
+resource "aws_security_group_rule" "public_security_group_rule_140" {
+  security_group_id = module.aws-vpc-us-east-1.public_security_group_id
+  type        = "egress"
+  protocol    = -1
+  from_port   = 0
+  to_port     = 0
   cidr_blocks = ["0.0.0.0/0"]
 }
