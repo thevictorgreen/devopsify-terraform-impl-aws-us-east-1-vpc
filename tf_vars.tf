@@ -220,10 +220,10 @@ variable "domain" {
   default = "PPPPP"
 }
 
-data "aws_route53_zone" "dns_public_zone" {
+/*data "aws_route53_zone" "dns_public_zone" {
   name = "PPPPP."
   private_zone = false
-}
+}*/
 
 variable "dns_private_zone_name" {
   description = "private_zone"
@@ -231,10 +231,10 @@ variable "dns_private_zone_name" {
   default = "AAAAA.PPPPP."
 }
 
-data "aws_route53_zone" "dns_private_zone" {
+/*data "aws_route53_zone" "dns_private_zone" {
   name = "AAAAA.PPPPP."
   private_zone = true
-}
+}*/
 
 variable "dns_reverse_zone_name" {
   description = "reverse zone"
@@ -242,10 +242,10 @@ variable "dns_reverse_zone_name" {
   default = "QQQQQ"
 }
 
-data "aws_route53_zone" "dns_reverse_zone" {
+/*data "aws_route53_zone" "dns_reverse_zone" {
   name = "QQQQQ"
   private_zone = true
-}
+}*/
 
 
 # other variables
