@@ -61,3 +61,11 @@ output "AAAAA-useast1-private-security-group" {
 output "AAAAA-useast1-public-security-group" {
   value = module.aws-vpc-us-east-1.public_security_group_id
 }
+
+output "dns_private_zone_id" {
+  value = module.aws-vpc-us-east-1.dns_private_zone_id
+}
+
+output "dns_reverse_zone_id" {
+  value = module.aws-vpc-us-east-1.dns_reverse_zone_id
+}

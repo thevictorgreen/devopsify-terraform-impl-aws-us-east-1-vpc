@@ -220,10 +220,10 @@ variable "domain" {
   default = "PPPPP"
 }
 
-/*data "aws_route53_zone" "dns_public_zone" {
+data "aws_route53_zone" "dns_public_zone" {
   name = "PPPPP."
   private_zone = false
-}*/
+}
 
 variable "dns_private_zone_name" {
   description = "private_zone"
@@ -252,30 +252,38 @@ variable "dns_reverse_zone_name" {
 variable "subnets" {
   type = map(string)
   default = {
-    "AAAAA-useast1-private-us-east-1a-sn" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-private-us-east-1b-sn" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-private-us-east-1c-sn" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-private-us-east-1d-sn" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-private-us-east-1e-sn" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-private-us-east-1f-sn" = "COPY FROM <terraform output>"
+    "AAAAA-useast1-private-us-east-1a-sn" = "OPOPOP"
+    "AAAAA-useast1-private-us-east-1b-sn" = "PQPQPQ"
+    "AAAAA-useast1-private-us-east-1c-sn" = "QRQRQR"
+    "AAAAA-useast1-private-us-east-1d-sn" = "RSRSRS"
+    "AAAAA-useast1-private-us-east-1e-sn" = "STSTST"
+    "AAAAA-useast1-private-us-east-1f-sn" = "TUTUTU"
 
-    "AAAAA-useast1-public-us-east-1a-sn" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-public-us-east-1b-sn" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-public-us-east-1c-sn" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-public-us-east-1d-sn" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-public-us-east-1e-sn" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-public-us-east-1f-sn" = "COPY FROM <terraform output>"
+    "AAAAA-useast1-public-us-east-1a-sn" = "UVUVUV"
+    "AAAAA-useast1-public-us-east-1b-sn" = "VWVWVW"
+    "AAAAA-useast1-public-us-east-1c-sn" = "WXWXWX"
+    "AAAAA-useast1-public-us-east-1d-sn" = "XYXYXY"
+    "AAAAA-useast1-public-us-east-1e-sn" = "YZYZYZ"
+    "AAAAA-useast1-public-us-east-1f-sn" = "ZAZAZA"
   }
 }
 
 variable "secgroups" {
   type = map(string)
   default = {
-    "AAAAA-useast1-bastion-security-group" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-cluster-security-group" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-private-security-group" = "COPY FROM <terraform output>"
-    "AAAAA-useast1-public-security-group"  = "COPY FROM <terraform output>"
+    "AAAAA-useast1-bastion-security-group" = "A1A1A1"
+    "AAAAA-useast1-cluster-security-group" = "B1B1B1"
+    "AAAAA-useast1-private-security-group" = "C1C1C1"
+    "AAAAA-useast1-public-security-group"  = "D1D1D1"
   }
+}
+
+variable "dns_private_zone_id" {
+  default = "E1E1E1"
+}
+
+variable "dns_reverse_zone_id" {
+  default = "F1F1F1"
 }
 
 variable "amis" {
