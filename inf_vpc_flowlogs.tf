@@ -1,5 +1,5 @@
 module "aws-vpc-us-east-1" {
-  source = "git@github.com:thevictorgreen/devopsify-terraform-mod-aws-vpc-us-east-1.git?ref=v0.1.0"
+  source = "git@github.com:thevictorgreen/devopsify-terraform-mod-aws-vpc-us-east-1.git?ref=v0.1.1"
 
   # inf_01_vpc_flowlogs
   environment                                = var.environment

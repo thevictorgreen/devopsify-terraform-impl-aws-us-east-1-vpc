@@ -67,3 +67,11 @@ sed -i "" "s/YZYZYZ/$replace/g" tf_vars.tf
 replace=$( terraform output "$environment-useast1-public-us-east-1f-sn" )
 echo $replace
 sed -i "" "s/ZAZAZA/$replace/g" tf_vars.tf
+
+replace=$( terraform output "dns_private_zone_id" )
+echo $replace
+sed -i "" "s/E1E1E1/$replace/g" tf_vars.tf
+
+replace=$( terraform output "dns_reverse_zone_id" )
+echo $replace
+sed -i "" "s/F1F1F1/$replace/g" tf_vars.tf
